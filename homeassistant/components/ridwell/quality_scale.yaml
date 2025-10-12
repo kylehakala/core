@@ -37,8 +37,8 @@ rules:
     status: todo
     comment: todo
   entity-unique-id:
-    status: todo
-    comment: todo
+    status: done
+    comment: https://github.com/home-assistant/core/blob/ridwell-quality-scale-improvements/homeassistant/components/ridwell/__init__.py#L18
   has-entity-name:
     status: todo
     comment: todo
