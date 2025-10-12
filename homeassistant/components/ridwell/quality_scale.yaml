@@ -13,8 +13,8 @@ rules:
     status: done
     comment: https://github.com/home-assistant/core/blob/dev/homeassistant/components/ridwell/coordinator.py and https://github.com/home-assistant/core/blob/dev/homeassistant/components/ridwell/entity.py
   config-flow-test-coverage:
-    status: todo
-    comment: todo
+    status: done
+    comment: Test runs produce 100% coverage on config_flow.py.
   config-flow:
     status: done
     comment: https://github.com/home-assistant/core/blob/dev/homeassistant/components/ridwell/config_flow.py
@@ -25,11 +25,11 @@ rules:
     status: exempt
     comment: Integration has no actions.
   docs-high-level-description:
-    status: todo
-    comment: todo
+    status: done
+    comment: The Ridwell integration allows users to track waste recycling pickups scheduled with Ridwell.
   docs-installation-instructions:
-    status: todo
-    comment: todo
+    status: done
+    comment: Uses standard integration docs template for installing.
   docs-removal-instructions:
     status: todo
     comment: todo
