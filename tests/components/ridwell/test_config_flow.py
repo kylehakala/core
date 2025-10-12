@@ -6,6 +6,7 @@ from aioridwell.errors import InvalidCredentialsError, RidwellError
 import pytest
 
 from homeassistant import config_entries
+from homeassistant.components.ridwell.config_flow import RidwellConfigFlow
 from homeassistant.components.ridwell.const import (
     CALENDAR_TITLE_ROTATING,
     CONF_CALENDAR_TITLE,
@@ -123,3 +124,29 @@ async def test_successful_config_flow(
     assert result["type"] is FlowResultType.CREATE_ENTRY
     assert result["title"] == TEST_USERNAME
     assert result["data"] == config
+
+
+async def test_async_get_options_flow_raises_system_error(
+    config_entry: MockConfigEntry,
+) -> None:
+    """Test SystemError from SchemaOptionsFlowHandler is propagated."""
+    with patch(
+        "homeassistant.components.ridwell.config_flow.SchemaOptionsFlowHandler",
+        side_effect=SystemError("System failure"),
+    ):
+        with pytest.raises(SystemError) as exc_info:
+            RidwellConfigFlow.async_get_options_flow(config_entry)
+        assert "System failure" in str(exc_info.value)
+
+
+async def test_async_get_options_flow_raises_ridwell_error(
+    config_entry: MockConfigEntry,
+) -> None:
+    """Test RidwellError from SchemaOptionsFlowHandler is propagated."""
+    with patch(
+        "homeassistant.components.ridwell.config_flow.SchemaOptionsFlowHandler",
+        side_effect=RidwellError("Ridwell failure"),
+    ):
+        with pytest.raises(RidwellError) as exc_info:
+            RidwellConfigFlow.async_get_options_flow(config_entry)
+        assert "Ridwell failure" in str(exc_info.value)

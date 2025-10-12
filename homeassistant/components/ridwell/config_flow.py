@@ -116,8 +116,10 @@ class RidwellConfigFlow(ConfigFlow, domain=DOMAIN):
             )
         except SystemError as err:
             LOGGER.error("Unknown System error: %s", err)
+            raise
         except RidwellError as err:
             LOGGER.error("Unknown Ridwell error: %s", err)
+            raise
 
         return schema_options_flow_handler
 
