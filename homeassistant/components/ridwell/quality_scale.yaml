@@ -1,0 +1,164 @@
+rules:
+  # Bronze
+  action-setup:
+    status: exempt
+    comment: Integration has no actions.
+  appropriate-polling:
+    status: done
+    comment: https://github.com/home-assistant/core/blob/dev/homeassistant/components/ridwell/coordinator.py#L22
+  brands:
+    status: done
+    comment: https://github.com/home-assistant/brands/tree/master/core_integrations/ridwell
+  common-modules:
+    status: done
+    comment: https://github.com/home-assistant/core/blob/dev/homeassistant/components/ridwell/coordinator.py and https://github.com/home-assistant/core/blob/dev/homeassistant/components/ridwell/entity.py
+  config-flow-test-coverage:
+    status: todo
+    comment: todo
+  config-flow:
+    status: done
+    comment: https://github.com/home-assistant/core/blob/dev/homeassistant/components/ridwell/config_flow.py
+  dependency-transparency:
+    status: done
+    comment: https://pypi.org/project/aioridwell and https://github.com/bachya/aioridwell
+  docs-actions:
+    status: exempt
+    comment: Integration has no actions.
+  docs-high-level-description:
+    status: todo
+    comment: todo
+  docs-installation-instructions:
+    status: todo
+    comment: todo
+  docs-removal-instructions:
+    status: todo
+    comment: todo
+  entity-event-setup:
+    status: todo
+    comment: todo
+  entity-unique-id:
+    status: todo
+    comment: todo
+  has-entity-name:
+    status: todo
+    comment: todo
+  runtime-data:
+    status: todo
+    comment: todo
+  test-before-configure:
+    status: todo
+    comment: todo
+  test-before-setup:
+    status: todo
+    comment: todo
+  unique-config-entry:
+    status: todo
+    comment: todo
+
+  # Silver
+  action-exceptions:
+    status: todo
+    comment: todo
+  config-entry-unloading:
+    status: todo
+    comment: todo
+  docs-configuration-parameters:
+    status: todo
+    comment: todo
+  docs-installation-parameters:
+    status: todo
+    comment: todo
+  entity-unavailable:
+    status: todo
+    comment: todo
+  integration-owner:
+    status: todo
+    comment: todo
+  log-when-unavailable:
+    status: todo
+    comment: todo
+  parallel-updates:
+    status: todo
+    comment: todo
+  reauthentication-flow:
+    status: todo
+    comment: todo
+  test-coverage:
+    status: todo
+    comment: todo
+
+  # Gold
+  devices:
+    status: todo
+    comment: todo
+  diagnostics:
+    status: todo
+    comment: todo
+  discovery-update-info:
+    status: exempt
+    comment: Integration does not perform discovery.
+  discovery:
+    status: exempt
+    comment: Integration does not perform discovery.
+  docs-data-update:
+    status: todo
+    comment: todo
+  docs-examples:
+    status: todo
+    comment: todo
+  docs-known-limitations:
+    status: todo
+    comment: todo
+  docs-supported-devices:
+    status: todo
+    comment: todo
+  docs-supported-functions:
+    status: todo
+    comment: todo
+  docs-troubleshooting:
+    status: todo
+    comment: todo
+  docs-use-cases:
+    status: todo
+    comment: todo
+  dynamic-devices:
+    status: todo
+    comment: todo
+  entity-category:
+    status: todo
+    comment: todo
+  entity-device-class:
+    status: todo
+    comment: todo
+  entity-disabled-by-default:
+    status: todo
+    comment: todo
+  entity-translations:
+    status: todo
+    comment: todo
+  exception-translations:
+    status: todo
+    comment: todo
+  icon-translations:
+    status: todo
+    comment: todo
+  reconfiguration-flow:
+    status: todo
+    comment: todo
+  repair-issues:
+    status: todo
+    comment: todo
+  stale-devices:
+    status: todo
+    comment: todo
+
+  # Platinum
+  async-dependency:
+    status: todo
+    comment: todo
+  inject-websession:
+    status: todo
+    comment: todo
+  strict-typing:
+    status: todo
+    comment: todo

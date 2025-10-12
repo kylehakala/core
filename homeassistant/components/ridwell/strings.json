@@ -6,6 +6,9 @@
         "description": "Please re-enter the password for {username}:",
         "data": {
           "password": "[%key:common::config_flow::data::password%]"
+        },
+        "data_description": {
+          "password": "Updated password used to log in to your Ridwell account."
         }
       },
       "user": {
@@ -13,6 +16,10 @@
         "data": {
           "username": "[%key:common::config_flow::data::username%]",
           "password": "[%key:common::config_flow::data::password%]"
+        },
+        "data_description": {
+          "username": "Username used to log in to your Ridwell account.",
+          "password": "Password used to log in to your Ridwell account."
         }
       }
     },

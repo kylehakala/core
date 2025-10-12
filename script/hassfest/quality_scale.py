@@ -830,7 +830,6 @@ INTEGRATIONS_WITHOUT_QUALITY_SCALE_FILE = [
     "rflink",
     "rfxtrx",
     "rhasspy",
-    "ridwell",
     "ripple",
     "risco",
     "rituals_perfume_genie",
